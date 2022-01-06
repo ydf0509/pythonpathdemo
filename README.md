@@ -1,6 +1,12 @@
 # 用一个python项目文件夹结构说明掌握 PYTHONPATH作用的重要性
 
-这个readme要认真看，里面说明了pythonath的作用，还重点解释了永久性环境变量和临时环境变量的重大影响范围的区别
+这个readme要认真看，里面说明了pythonath的作用，
+
+第6章还重点解释了永久性环境变量和临时环境变量的重大影响范围的区别
+
+第7章说明了任何项目如果设置了 PYTHONPATH 的4大好处
+
+第8章说明了设置 PYTHONPATH 达到多个项目复用公司公共工具类代码的妙用
 
 
 
@@ -128,7 +134,7 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 ```
 
 
-## 7 运行任何python项目设置 PYTHONPATH为当前项目根目录 是个好习惯，好处如下
+## 7 运行任何python项目设置 PYTHONPATH为当前项目根目录 是个好习惯，4个好处如下
 ```
 1、设置后，任意项目目录下的任意深层级文件夹下的多个脚本都可以轻松作为python运行起点
 2、绝对不需要low操作硬编码 sys.path.insert
@@ -136,3 +142,41 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 4、与pycahrm的运行行为保持了一致，大大避免了命令行调试和pycahrm运行需要单独分别调试
 ```
 
+## 8 一个环境变量设置多个值
+
+```
+一个环境变量设置多个值这个和 PYTHONPATH无关，对任何环境变量适用，但有的人还是不知道
+
+export PYTHONPATH=/codes/proj1:/codes/proj2
+
+设置多个环境变量，linux是 : 隔开，win是 ; 隔开。
+
+例如上面一下子设置了 PYTHONPATH 为两个路径，当我 import myutil 时候，
+首先从/codes/proj1 下找myutil包或模块，如果没有再从 /codes/proj2 中查找，
+如果还没找到就从python的三方包site_packegs目录找，还是找不到就会报错模块不存在
+
+所以你可以设置 PYTHONPATH为当前项目根目录和另一个公司的通用公共库项目
+```
+
+### 8.2 pycharm中一个项目这么使用另外一个项目的包或模块
+```
+因为pycahrm是点击右键run运行的，不太方便每次手动设置其他项目到当前脚本的 PYTHONPATH
+看下图，可以选择denpendece，例如funboost项目中可以直接使用nb_log项目的函数，
+这样当nb_log修改代码时候，并不需要把nb_log打包到pypi，然后安装到python目录下，pycahrm的这个功能非常的方便
+如果在linux下就使用 PYTHONPATH 设置两个文件夹的方式就行了。
+```
+[![Tx8jBt.md.png](https://s4.ax1x.com/2022/01/06/Tx8jBt.md.png)](https://imgtu.com/i/Tx8jBt)
+
+
+## 9 使用 PYTHONPATH 达到非常方便的多个项目复用公司通用代码库的目的，暴击打包上传pypi再安装
+```
+一般公司可能有数十个python项目，每个python项目会复用写好的一部分函数和类。
+
+low的人会把公用代码库复制到几十个项目的下面，但这样每次修改或者新增公共代码库要改几十个地方，非常的low。完全是浪费生命。
+
+中等的程序员会大奖pypi私服，把公共代码库打包上传到公司私服。然后pip安装到python下面。
+这样弊端也很明显，改一个字母都要打包上传然后pip install，太蛋疼了，也是浪费时间和生命。
+
+高级程序员，精通PYTHONPATH的 会 设按照8和8.2 设置多个PYTHONPATH，
+只需要改了通用公共库代码，啥都不需要做，在十几个项目都自动生效。这才是节约生命的方式。
+```
