@@ -106,6 +106,10 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 我那时候一直在想，如果一台机器部署七八个django服务咋办，每个项目全都设置自己的 DJANGO_SETTINGS_MODULE 这个 环境变量，那不是乱套呀。
 如果我设置这个环境变量会不会影响同事使用这个linux也使用django？会不会混了乱套了？需不需要提心吊胆呢？
 那个时候，主要是没理解什么是临时环境变量和永久性环境变量。一直到现在 很多人在使用我的框架时候，我要求设置PYTHONPATH，他们一直疑惑这个问题。
+
+WorkPlatFormApi.settings 说得是从 WorkPlatFormApi 文件夹下的 settings.py 作为配置文件来源，
+如果你在测试linux环境想用不同的msqyl配置等，写个 settings_test.py,然后 export DJANGO_SETTINGS_MODULE="WorkPlatFormApi.settings_test",
+再用uswgi部署django，那就自动使用指定的settings_test.py了。生产环境写个 settings_prod.py 设置环境变量同理。
 ```
 
 
