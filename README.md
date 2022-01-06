@@ -168,7 +168,7 @@ export PYTHONPATH=/codes/proj1:/codes/proj2
 [![Tx8jBt.md.png](https://s4.ax1x.com/2022/01/06/Tx8jBt.md.png)](https://imgtu.com/i/Tx8jBt)
 
 
-## 9 使用 PYTHONPATH 达到非常方便的多个项目复用公司通用代码库的目的，暴击打包上传pypi再安装
+## 9 秒用 PYTHONPATH 达到非常方便的多个项目复用公司通用代码库的目的，暴击打包上传pypi再安装
 ```
 一般公司可能有数十个python项目，每个python项目会复用写好的一部分函数和类。
 
@@ -180,3 +180,13 @@ low的人会把公用代码库复制到几十个项目的下面，但这样每�
 高级程序员，精通PYTHONPATH的 会 设按照8和8.2 设置多个PYTHONPATH，
 只需要改了通用公共库代码，啥都不需要做，在十几个项目都自动生效。这才是节约生命的方式。
 ```
+
+## 9.2 怎么确定设置了哪些PYTHONPATH
+
+在代码中写下面的，就可以看到pythonpath了,当import 一个模块时候sys.path越靠前的文件夹路径越优先被查找
+```python
+import sys
+print(sys.path)  
+
+```
+# 如果你看完了以上，精通了 PYTHONPATH ，写几十个项目代码能够如虎添翼。更不会抱怨 nb_log 和 funboost 要你写 PYTHONPATH 感到麻烦了。
