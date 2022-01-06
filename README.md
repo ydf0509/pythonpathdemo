@@ -158,7 +158,7 @@ export PYTHONPATH=/codes/proj1:/codes/proj2
 所以你可以设置 PYTHONPATH为当前项目根目录和另一个公司的通用公共库项目
 ```
 
-### 8.2 pycharm中一个项目这么使用另外一个项目的包或模块
+### 8.2 pycharm中一个项目怎么使用另外一个项目的包或模块
 ```
 因为pycahrm是点击右键run运行的，不太方便每次手动设置其他项目到当前脚本的 PYTHONPATH
 看下图，可以选择denpendece，例如funboost项目中可以直接使用nb_log项目的函数，
