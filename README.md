@@ -67,6 +67,8 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 
 像这个深层级文件夹下的 d6/d7/d8/d9/d10/run10.py ，在cmd下运行，你不会设置 PYTHONPATH，手写sys.path真的是非常的想死的心都有了。
 
+如果你的项目有有几百个深层级目录下的脚本都可以做为运行起点被直接python xx.py 启动，你为了cmd运行正常，一个一个的脚本里面加sys.path.insert加到口吐鲜血。
+
 [![Txasbj.md.png](https://s4.ax1x.com/2022/01/06/Txasbj.md.png)](https://imgtu.com/i/Txasbj)
 
 
