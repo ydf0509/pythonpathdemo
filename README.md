@@ -10,7 +10,7 @@
 
 
 
-##1.项目目录说明
+## 1.项目目录说明
 ```
 pythonpathdemo是这个项目的根目录，
 d1/d2/d3/m3.py  有一个fun3函数，
@@ -18,7 +18,7 @@ d4/d5/run.py 里面导入和运行fun3函数
 ，这种目录的python项目就很容易验证懂PYTHONPATH的重要性了。
 ```
 
-##2. 演示pyachrm完美运行，cmd和vscode报错
+## 2. 演示pyachrm完美运行，cmd和vscode报错
 ![](https://img2020.cnblogs.com/blog/1108990/202111/1108990-20211119103852120-953934616.png)
 
 截图可以看出，在pycahrm运行run5.py正确调用fun3函数，在cmd命令行却不行，vscode也不行。
@@ -45,7 +45,7 @@ vscode 也是可以学pycharm 设置PYTHONPATH的，只是不是像pycahrm那样
 ![](https://img2020.cnblogs.com/blog/1108990/202111/1108990-20211119104340305-1438114681.png)
 
 
-##4.演示不学习PYTHONPATH， 愚蠢的手动硬编码 sys.path
+## 4.演示不学习PYTHONPATH， 愚蠢的手动硬编码 sys.path
 ```
 笨瓜喜欢手动操作sys.path,然后在cmd命令，cd 到d5目录下，
 再运行 python run5.py，太笨了这样写，
@@ -68,7 +68,7 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 ## 5 在win和linux，cmd和shell一句话怎么运行两条命令
 
 
-###5.1 如果分开两次运行命令行
+### 5.1 如果分开两次运行命令行
 ```
 首先cd 到项目根目录，然后linux 上 是 export PYTHONPATH=./ 
 如果是win上是 set PYTHONPATH=./  ，  
@@ -77,7 +77,7 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 当然可以不先cd到项目根目录，那就 export PYTHONPATH=项目根目录的绝对路径 就行了。
 ```
 
-###5.2 如果一句命令行同时设置环境变量和运行python脚本
+### 5.2 如果一句命令行同时设置环境变量和运行python脚本
 ```
 首先cd 到项目根目录，
 然后linux 上 是 export PYTHONPATH=./ ; python xx.py
@@ -120,7 +120,7 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 
 ```
 
-### 6.1 什么是临时会话环境变量？
+### 6.2 什么是临时会话环境变量？
 ```
 临时会话环境变量，只会影响你当前单开的cmd 或者 shell窗口，不会影响到其他会话窗口
 
