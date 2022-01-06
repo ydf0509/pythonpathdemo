@@ -197,4 +197,4 @@ import sys
 print(sys.path)  
 
 ```
-# 如果你看完了以上，精通了 PYTHONPATH ，写几十个项目代码能够如虎添翼。更不会抱怨 nb_log 和 funboost 要你写 PYTHONPATH 感到麻烦了。
+# 如果你看完了以上，精通了 PYTHONPATH ，写几十个项目代码能够如虎添翼。更不会抱怨 nb_log 和 funboost 要你 export PYTHONPATH 感到麻烦了。
