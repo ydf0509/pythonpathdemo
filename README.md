@@ -65,7 +65,7 @@ vscode 也是可以学pycharm 设置PYTHONPATH的，只是不是像pycahrm那样
 pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行逻辑就和pycahrn运行代码保持一致了。
 ```
 
-像这个深层级文件夹下的 run10.py ，在cmd下运行，你不会设置 PYTHONPATH，手写sys.path真的是非常的想死的心都有了。
+像这个深层级文件夹下的 d6/d7/d8/d9/d10/run10.py ，在cmd下运行，你不会设置 PYTHONPATH，手写sys.path真的是非常的想死的心都有了。
 
 [![Txasbj.md.png](https://s4.ax1x.com/2022/01/06/Txasbj.md.png)](https://imgtu.com/i/Txasbj)
 
