@@ -141,7 +141,7 @@ WorkPlatFormApi.settings 说得是从 WorkPlatFormApi 文件夹下的 settings.p
 你登录一台linux，在xshell窗口设置了环境变量，你同事也用相同账号登录这台linux服务器，你同事并不能获取到你设置的环境变量
 所以临时会话级环境变量只会影响当前的会话窗口，不会影响到其他项目和其他人。
 
-了解这一点非常非常重要。你不要以为你随便在终端敲击 export PYTHONPATH 会影响其他人了。每个项目的 PYTHONPATH都设置为自己是非常安全的，不会乱套
+了解这一点非常非常重要。你不要以为你随便在终端敲击 export PYTHONPATH 会影响其他人和其他python项目了。每个项目的 PYTHONPATH都设置为自己是非常安全的，不会乱套
 
 ```
 
