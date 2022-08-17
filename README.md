@@ -58,7 +58,7 @@ vscode 也是可以学pycharm 设置PYTHONPATH的，只是不是像pycahrm那样
 为什么老有笨瓜喜欢在很多python脚本硬编码 sys.path.insert或者append？
 这种人主要是不懂 PYTHONPATH的作用，造成到处手动硬编码操作sys.path。
 
-你不信去看看任意一个三方包python大神写的框架或者库，有谁那么愚蠢这么手动操作sys.path的？
+你不信去看看任意一个三方包python大神写的框架或者库，就算目录结果复杂有七八层文件夹，有谁那么愚蠢这么手动操作sys.path的？
 手动sys.path.insert是一厢情愿一意孤行意淫的写法。
 
 可以这么说，在控制台命令行部署运行任何项目，把PYTHONPATH设置为项目根目录路径是最合适的，
