@@ -180,7 +180,7 @@ export PYTHONPATH=/codes/proj1:/codes/proj2
 [![Tx8jBt.md.png](https://s4.ax1x.com/2022/01/06/Tx8jBt.md.png)](https://imgtu.com/i/Tx8jBt)
 
 
-## 9 秒用 PYTHONPATH 达到非常方便的多个项目复用公司通用代码库的目的，暴击打包上传pypi再安装
+## 9 妙用 PYTHONPATH 达到非常方便的多个项目复用公司通用代码库的目的，暴击打包上传pypi再安装
 ```
 一般公司可能有数十个python项目，每个python项目会复用写好的一部分函数和类。
 
