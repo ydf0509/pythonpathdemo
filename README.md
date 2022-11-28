@@ -60,7 +60,7 @@ vscode 也是可以学pycharm 设置PYTHONPATH的，只是不是像pycahrm那样
 为什么老有笨瓜喜欢在很多python脚本硬编码 sys.path.insert或者append？
 这种人主要是不懂 PYTHONPATH的作用，造成到处手动硬编码操作sys.path。
 
-你不信去看看任意一个三方包python大神写的框架或者库，有谁那么愚蠢这么手动操作sys.path的？
+你不信去看看任意一个三方包python大神写的框架或者库，就算目录结果复杂有七八层文件夹，有谁那么愚蠢这么手动操作sys.path的？
 手动sys.path.insert是一厢情愿一意孤行意淫的写法。
 
 可以这么说，在控制台命令行部署运行任何项目，把PYTHONPATH设置为项目根目录路径是最合适的，
@@ -143,7 +143,7 @@ WorkPlatFormApi.settings 说得是从 WorkPlatFormApi 文件夹下的 settings.p
 你登录一台linux，在xshell窗口设置了环境变量，你同事也用相同账号登录这台linux服务器，你同事并不能获取到你设置的环境变量
 所以临时会话级环境变量只会影响当前的会话窗口，不会影响到其他项目和其他人。
 
-了解这一点非常非常重要。你不要以为你随便在终端敲击 export PYTHONPATH 会影响其他人了。每个项目的 PYTHONPATH都设置为自己是非常安全的，不会乱套
+了解这一点非常非常重要。你不要以为你随便在终端敲击 export PYTHONPATH 会影响其他人和其他python项目了。每个项目的 PYTHONPATH都设置为自己是非常安全的，不会乱套
 
 ```
 
@@ -182,7 +182,7 @@ export PYTHONPATH=/codes/proj1:/codes/proj2
 [![Tx8jBt.md.png](https://s4.ax1x.com/2022/01/06/Tx8jBt.md.png)](https://imgtu.com/i/Tx8jBt)
 
 
-## 9 秒用 PYTHONPATH 达到非常方便的多个项目复用公司通用代码库的目的，暴击打包上传pypi再安装
+## 9 妙用 PYTHONPATH 达到非常方便的多个项目复用公司通用代码库的目的，暴击打包上传pypi再安装
 ```
 一般公司可能有数十个python项目，每个python项目会复用写好的一部分函数和类。
 
