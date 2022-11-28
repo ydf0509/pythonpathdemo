@@ -1,3 +1,8 @@
+import os
+import sys
+
+os.environ.setdefault("PYTHONPATH","D:\codes\pythonpathdemo")
+print(sys.path)
 from d1.d2.d3.m3 import fun3
 
 
