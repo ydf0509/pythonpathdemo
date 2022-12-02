@@ -10,7 +10,10 @@
 
 第9章说明了设置 PYTHONPATH 达到多个项目复用公司公共工具类代码的妙用
 
-
+## 其他 PYTHONPATH文章
+[环境变量：PYTHONPATH](https://cloud.tencent.com/developer/article/1473765)
+[See the Python 3 docs for PYTHONPATH.](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html)
+[官网讲pythonpath](https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH)
 
 ## 1.项目目录说明
 ```
