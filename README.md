@@ -88,6 +88,7 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 ```
 首先cd 到项目根目录，然后linux 上 是 export PYTHONPATH=./ 
 如果是win上是 set PYTHONPATH=./  ，  
+如果是win10/11的powershell上是 $ENV:PYTHONPATH="./" &  python xx.py
 然后可以切换到任意文件夹，运行你需要运行的python xx.py
 
 当然可以不先cd到项目根目录，那就 export PYTHONPATH=项目根目录的绝对路径 就行了。
@@ -97,7 +98,8 @@ pycahrm默认帮我们这么做了。你这么做了，那么你的代码运行�
 ```
 首先cd 到项目根目录，
 然后linux 上 是 export PYTHONPATH=./ ; python xx.py
-如果是win上是 set PYTHONPATH=./ &  python xx.py
+如果是win的cmd上是 set PYTHONPATH=./ &  python xx.py
+如果是win10/11的powershell上是 $ENV:PYTHONPATH="./" &  python xx.py
 
 当然可以不先cd到项目根目录，那就 export PYTHONPATH=项目根目录的绝对路径 就行了。
 ```
