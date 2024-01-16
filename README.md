@@ -15,7 +15,7 @@
 [See the Python 3 docs for PYTHONPATH.](https://bic-berkeley.github.io/psych-214-fall-2016/using_pythonpath.html)
 [官网讲pythonpath](https://docs.python.org/3/using/cmdline.html#envvar-PYTHONPATH)
 
-## 1.0 import 一个模块,python是怎么查找顺序的
+## 1.0 先了解下python 中 import 一个模块,python是怎么个查找顺序的
 
 很多pythoner到现在不清楚python  import abcd,是从哪里去找abcd这个包或模块的,连 PYTHONPATH 是什么都从来没听说过,
 
