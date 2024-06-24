@@ -235,8 +235,12 @@ print(sys.path)
 用户有 一个总的python代码文件夹，mycodes/ 文件夹 , 用户在这个文件夹 mycodes/ 下面写了很多个 独立的python 项目，
 mycodes/proj1/  和 mycodes/proj2/  mycodes/proj3/ 文件夹是3个python不同的项目，
 用户为了偷懒，使用pycharm打开 mycodes/ 作为项目，这样就是个错误的方式，这样mycodes/ 会自动添加到 PYTHONPATH ，
-但是应该预期是 mycodes/proj1/ 添加到 PYTHONPATH，添加错了就会自动导入包错误。
+但是应该预期是 mycodes/proj1/ 添加到 PYTHONPATH，添加错了就会自动导入包错误，应该从项目根目录开始导入模块，而不是从mycodes/的路径开始导入模块，
 
+mycodes/proj1/的 d.py 导入c模块应该是：
+from a.b import c
+而不应该是：
+from proj1.a.b import c
 
 用户应该分三次，分别打开 mycodes/proj1/  和 mycodes/proj2/  mycodes/proj3/ 作为项目，而不是偷懒打开 mycodes/ 作为项目。
 有的人到现在完全没听说 PYTHONPATH， 所以不知道打开  mycodes/ 作为pycharm项目和 分多次打开精确打开项目 有什么区别。
