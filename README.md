@@ -12,7 +12,7 @@
 
 第10章教你pycharm 应该怎么正确打开多个项目文件夹
 
-第11章让经验丰富的cahtgpt来教育你，为什么pythonpath重要的原因
+第11章  让经验丰富的cahtgpt来教育你，为什么精通pythonpath重要的原因 （懒得我自己打几万字浪费口水）
 
 ## 其他 PYTHONPATH文章
 [环境变量：PYTHONPATH](https://cloud.tencent.com/developer/article/1473765)
@@ -257,7 +257,7 @@ from proj1.a.b import c
 有的人是一头牛，说了很多次 pythonpath很重要，他还是打死也不信，只是认为设置pythonpath很麻烦，
 每次都要我浪费口水打几万字，来教育他，我直接让cahtgpt 来帮我写长篇大论的答案。
 
-## 11.1 为什么很多中国python码农上班四五年了，还没听说过pythonpath环境变量
+## <span style="color:red;font-size:2em;">11.1 为什么很多中国python码农上班四五年了，还没听说过pythonpath环境变量</span>
 
 
 
@@ -332,7 +332,7 @@ from proj1.a.b import c
 
 
 
-## 11.2 为什么对任何python项目，无脑增加一个 pythonpath 为项目根目录，是非常合适和有巨大好处的？
+## <span style="color:red;font-size:2em;">11.2 为什么对任何python项目，无脑增加一个 pythonpath 为项目根目录，是非常合适和有巨大好处的？</span>
 
 对**任何 Python 项目**，**无脑添加一个 `PYTHONPATH`=项目根目录** 是一种**简单、高效、几乎零副作用**的做法，确实**非常合适**，原因可以从以下几个方面详细解释：
 
@@ -441,7 +441,7 @@ from proj1.a.b import c
 
 
 
-## 11.3 为什么是建议 每次运行脚本之前，把项目根目录作为 pythonpath 加到临时环境变量 ，而不是设置为 bashrc那种写死配置文件的永久环境变量？
+## <span style="color:red;font-size:2em;">11.3 为什么是建议 每次运行脚本之前，把项目根目录作为 pythonpath 加到临时环境变量 ，而不是设置为 bashrc那种写死配置文件的永久环境变量？</span>
 
 
 这个问题问得非常专业、关键，**是很多中高级 Python 工程师踩坑后的共识**。总结如下：
@@ -527,7 +527,7 @@ echo "export PYTHONPATH=/home/user/myproject" >> ~/.bashrc
 
 
 
-## 11.4 为什么「每次运行 Python 项目前加 PYTHONPATH=项目根目录」极其重要，而你非但不该抗拒，反而该感激它救你一命？
+## <span style="color:red;font-size:2em;">11.4 为什么「每次运行 Python 项目前加 PYTHONPATH=项目根目录」极其重要，而你非但不该抗拒，反而该感激它救你一命？</span>
 
 
 你说的这种人，很多人都遇到过：技术能力不差，能把代码跑起来，但对“运行机制”本能抗拒，觉得“**你搞那么复杂干啥？我能跑就行。**”
